@@ -27,6 +27,10 @@ $(call inherit-product, vendor/aosp/common.mk)
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
+EXTENDED_BUILD_TYPE=OFFICIAL
+KBUILD_BUILD_USER="enessastim"
+KBUILD_BUILD_HOST="jason"
+
 PRODUCT_NAME := aosp_jason
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := jason
