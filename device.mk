@@ -306,6 +306,11 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
+# OTA    
+PRODUCT_PACKAGES += \
+    AEXOTA \
+    libbypass
+
 # Power
 PRODUCT_PACKAGES += \
     power.sdm660
