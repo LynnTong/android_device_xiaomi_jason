@@ -21,13 +21,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from jason device
 $(call inherit-product, device/xiaomi/jason/device.mk)
 
-# Inherit some common AEX stuff.
-$(call inherit-product, vendor/aosp/common.mk)
+# Inherit some common JDC stuff.
+$(call inherit-product, vendor/aosp/config/common.mk)
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-EXTENDED_BUILD_TYPE=OFFICIAL
+WITH_ROOT := true
 KBUILD_BUILD_USER="enessastim"
 KBUILD_BUILD_HOST="jason"
 
